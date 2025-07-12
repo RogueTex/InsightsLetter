@@ -16,14 +16,14 @@ body {
 }
 
 header h1 {
-  margin-top: 0;
   font-size: 2rem;
+  margin: 0;
 }
 
 .subtitle {
   color: #555;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 input[type="text"] {
@@ -49,6 +49,16 @@ button:hover {
   background: #3f51b5;
 }
 
+.model-note {
+  background: #fff3cd;
+  color: #856404;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ffeeba;
+}
+
 .output {
   margin-top: 2rem;
 }
@@ -57,9 +67,9 @@ button:hover {
   background: #f9f9f9;
   border-left: 4px solid #5c6bc0;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .insight-card h3 {
@@ -68,14 +78,13 @@ button:hover {
   color: #333;
 }
 
-.model-note {
-  background: #fff3cd;
-  color: #856404;
-  padding: 0.75rem;
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-  border: 1px solid #ffeeba;
+.insight-card ul {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.insight-card li {
+  margin-bottom: 0.5rem;
 }
 
 footer {
@@ -88,6 +97,11 @@ footer {
 footer a {
   color: #5c6bc0;
   text-decoration: none;
+}
+
+.badge {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 /* 🔄 Loading Spinner */
@@ -108,9 +122,4 @@ footer a {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-.badge {
-  margin-top: 1rem;
-  text-align: center;
 }
