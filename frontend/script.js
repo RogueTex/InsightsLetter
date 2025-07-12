@@ -8,7 +8,7 @@ form.addEventListener('submit', async (e) => {
   resultDiv.textContent = 'Generating insight...';
 
   try {
-    const response = await fetch('http://localhost:8000/process', {
+    const response = await fetch('https://insightsletter.onrender.com/process', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ topic })
@@ -26,3 +26,6 @@ form.addEventListener('submit', async (e) => {
     console.error(error);
   }
 });
+
+
+//fetch('', { ... })
