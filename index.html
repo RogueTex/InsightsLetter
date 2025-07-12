@@ -2,23 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Insight Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🔍 AI Insight Generator</h1>
-    <p class="subtitle">Type a topic and get actionable insights based on current trends.</p>
+    <header>
+      <h1>🧠 AI Insight Generator</h1>
+      <p class="subtitle">Get curated, model-generated summaries on trending topics</p>
+    </header>
 
-    <form id="insight-form">
-      <input type="text" id="topic" placeholder="Enter a topic..." required />
-      <button type="submit">Generate Insight</button>
-    </form>
-
-    <div id="result" class="result">
-      <!-- Insight summary will appear here -->
+    <div class="model-note">
+      ⚠️ Insights are generated using a large language model updated only through early 2024. Relevance may vary based on recent events.
     </div>
+
+    <input type="text" id="topicInput" placeholder="Try a topic like 'AI in sports'..." />
+    <button onclick="generateInsight()">Generate Insight</button>
+
+    <!-- 🔄 Spinner -->
+    <div id="loader" class="hidden"></div>
+
+    <div id="output" class="output"></div>
+
+    <!-- 🧬 OpenRouter Badge -->
+    <div class="badge">
+      <a href="https://openrouter.ai" target="_blank">
+        <img src="https://openrouter.ai/images/badge.svg" alt="Powered by OpenRouter" />
+      </a>
+    </div>
+
+    <!-- 📩 Footer -->
+    <footer>
+      <p>Built with ❤️ by <a href="mailto:raghu.s@utexas.edu">raghu.s@utexas.edu</a></p>
+      <p><a href="https://roguetex.github.io/InsightsLetter/" target="_blank">Live site</a> | <a href="https://github.com/RogueTex/InsightsLetter" target="_blank">View source</a></p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
