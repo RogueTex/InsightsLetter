@@ -78,13 +78,9 @@ button:hover {
   color: #333;
 }
 
-.insight-card ul {
-  padding-left: 1.25rem;
-  margin-top: 0.5rem;
-}
-
-.insight-card li {
-  margin-bottom: 0.5rem;
+.insight-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 footer {
