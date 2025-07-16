@@ -16,7 +16,7 @@ def get_insight(topic):
         json={
             "model": "openrouter/auto",  # ✅ smart model routing
             "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 975,
+            "max_tokens": 750,
             "temperature": 0.7
         }
     )
