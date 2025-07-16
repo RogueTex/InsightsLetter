@@ -19,12 +19,13 @@
       ⚠️ This app uses a language model trained only up to early 2024. New developments may not be reflected in generated insights.
     </div>
 
-    <input type="text" id="topicInput" placeholder="Try 'AI in sports' or 'climate policy'" />
-    <button onclick="generateInsight()">Generate Insight</button>
+    <input type="text" id="topicInput" placeholder="Try 'AI in sports' or 'climate policy'" aria-label="Topic input" />
+    <button id="generateBtn" aria-label="Generate Insight">Generate Insight</button>
+    <button id="clearBtn" aria-label="Clear output" type="button">Clear</button>
 
-    <div id="loader" class="hidden"></div>
+    <div id="loader" class="hidden" aria-live="polite"></div>
 
-    <div id="output" class="output"></div>
+    <div id="output" class="output" aria-live="polite"></div>
 
     <div class="badge">
       <a href="https://openrouter.ai" target="_blank">

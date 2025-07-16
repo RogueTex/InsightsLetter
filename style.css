@@ -43,10 +43,28 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  margin-right: 0.5rem;
+  min-width: 120px;
 }
 
-button:hover {
-  background: #3f51b5;
+button#clearBtn {
+  background: #e0e0e0;
+  color: #333;
+}
+button#clearBtn:hover {
+  background: #bdbdbd;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.placeholder {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .model-note {
@@ -70,6 +88,8 @@ button:hover {
   margin-bottom: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .insight-card h3 {
